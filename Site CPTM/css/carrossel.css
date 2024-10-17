@@ -1,0 +1,21 @@
+
+/* Ajusta a altura das imagens do carrossel */
+.carousel-item img {
+    height: 418px; /* Defina a altura desejada */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    padding-top: 20px;
+}
+
+/* Adiciona uma classe para ajustar o tamanho da imagem */
+.carousel-item {
+    max-height: 400px; /* Limita a altura máxima do item do carrossel */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o limite */
+}
+          
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto; /* Ajuste a altura para telas menores */
+        }
+}
+   

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+footer {
+    position: relative; 
+    background: #f74343; 
+    color: #1A1A1A; 
+    text-align: left; 
+    padding: 1rem; 
+    margin-top: 20px; 
+    border-top: 1px solid #1A1A1A; 
+    box-shadow: 0 -2px 5px rgba(131, 131, 131, 0.3);
+}
+
+.contatos {
+    font-size: 1.5rem; 
+    color: #E0E0E0;
+    padding: 0.6rem 0;
+}
+
+.e-mail, .telefone {
+    font-size: 1rem; 
+    color: #1A1A1A;
+    padding: 0.3rem 0; 
+    display: flex; 
+    align-items: center;
+}
+
+.icon { 
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+.linha3 { 
+    border: 0; 
+    height: 2px; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), #1A1A1A); 
+    margin: 1px; 
+    width: 100%; 
+}
+
+.copyright, .design {
+    text-align: center; 
+    padding: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+    .contatos {
+        font-size: 1.2rem; 
+    }
+    
+    .e-mail, .telefone {
+        font-size: 0.9rem; 
+    }
+}
