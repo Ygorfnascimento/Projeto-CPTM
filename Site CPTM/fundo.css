@@ -1,7 +1,15 @@
+
+:root {
+    --cor1: #f23030;
+    --cor2: #f28080;
+    --cor3: #f2c2c2;
+    --cor4: #f2f2f2;
+}
+
 .container {
-    height: 100vh;
+    height: 100vh; /* Mantém a altura total da tela */
     width: 100%;
-    background: linear-gradient(45deg,#f23030,#f28080,#f2c2c2,#f2f2f2);
+    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
 }
@@ -15,5 +23,13 @@
     }
     100% {
         background-position: 0 50%;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Ajusta a altura em dispositivos menores */
+        min-height: 100vh; /* Garante que ocupe pelo menos 100% da altura da tela */
     }
 }
