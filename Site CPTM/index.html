@@ -3,107 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte TI </title>
-
-
+    <title>Suporte TI</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <link rel="icon" href="assets/favicon.ico">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     <!-- Boostrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-  
-  <!-- css  -->
-   <link rel="stylesheet" href="css/inde.css">
-   <link rel="stylesheet" href="css/rodape.css">
-   <link rel="stylesheet" href="css/carrossel.css">
-
-</head> 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/inde.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+</head>
 <body>
 
-    <!-- Favicons -->
-     <link rel="icon" href="">
-
-    <HEAder id="header" class="header"> 
-
-         <!-- cabeçalho -->
+    <!-- Header -->
+    <header id="header" class="header">
         <div class="topbar d-flex align-items-center">
-            
             <div class="container d-flex justify-content-center justify-content-md-between">
-
                 <div class="d-none d-md-flex align-items-center">
-
                     <i class="bi bi-clock"></i>
                     Segunda a Sexta, das 8h às 17h
-
-                </div> 
-
+                </div>
                 <div class="d-md-flex align-items-center">
-
                     <i class="bi bi-phone"></i>
                     Desk: 0800-725-2786
-
                 </div>
-
             </div>
-           
-
-        </div>  <!-- fim do cabeçalho -->
+        </div>
 
         <div class="branding d-flex align-items-center">
-
             <div class="container position-relative d-flex align-items-center justify-content-end">
-
-               
-
-                <a href="" class="logo d-flex align-items-center me-auto"> 
+                <a href="" class="logo d-flex align-items-center me-auto">
                     <img src="assets/CPTM_(Logo).svg.png" alt="">
                 </a>
 
-                <!-- menu -->
-
+                <!-- Menu -->
                 <nav id="navmenu" class="navmenu">
                     <ul>
                         <li><a href="#hero" class="active">Home</a></li>
-
-                        <li><a href="#ajuda">Ajuda</a></li> <!-- vídeo da Letícia -->
-
+                        <li><a href="#ajuda">Ajuda</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-
                     </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
 
-                    <i class="mobile-nav-toggle d-xl-none bi bi-list "> </i>
-
-                </nav> <!-- fim do menu -->
-
-                <button class="cta-btn"> <a href="" class="cta-btn">
+                <button class="cta-btn">
                     <a href="login.html" class="cta-btn">
                         <i class="material-icons">person</i>
                     </a>
-                </a></button> 
-
-
+                </button>
             </div>
-        </div> 
-    </Header> 
+        </div>
+    </header>
 
-    <!-- Carrossel -->
+    <!-- Carousel -->
     <main class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 100%; overflow: hidden;">
             <div class="carousel-indicators">
@@ -111,7 +72,6 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-       
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div style="width: 100%; height: 400px; overflow: hidden;">
@@ -130,12 +90,10 @@
                 </div>
             </div>
         </div>
-        </section>
     </main>
-   
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
     <script>
         $(document).ready(function() {
             $('#carouselExampleCaptions').carousel({
@@ -143,147 +101,107 @@
             });
         });
     </script>
-   
-    <!-- fim carrossel -->
 
-
-    <!-- serviços -->
-
-   <div class="accordion">
-    <div class="accordion-item">
-        <div class="accordion-item-header">
-            <i class="fa-solid fa-chevron-down"></i>
-            Cadastro
+    <!-- Serviços -->
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                <i class="fa-solid fa-chevron-down"></i>
+                Cadastro
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    O cadastro de colaboradores terceiros para acesso à rede CPTM é realizado pelo Service Desk.
+                    <br><br>
+                    A solicitação deve ser encaminhada por e-mail para <a href="mailto:servicedesk@cptm.sp.gov.br">servicedesk@cptm.sp.gov.br</a> pelo gestor CPTM responsável pelo colaborador. As seguintes informações são necessárias:
+                    <br><br>
+                    <strong>Empresa:</strong><br>
+                    <strong>Nome Completo:</strong><br>
+                    <strong>Sexo:</strong> ( ) feminino ( ) masculino<br>
+                    <strong>Data de Nascimento:</strong><br>
+                    <strong>CPF:</strong><br>
+                    <strong>Estado Civil:</strong> ( ) Solteiro ( ) Casado ( ) Desquitado ( ) Viúvo ( ) Sep. judicialmente ( ) Outro<br>
+                    <strong>Grau de Instituição:</strong><br>
+                    <strong>RG:</strong><br>
+                    <strong>E-mail:</strong><br>
+                    <strong>Telefone:</strong><br>
+                    <strong>Gestor CPTM Responsável:</strong><br>
+                    <strong>Estrutura Organizacional:</strong><br><br>
+                    Após o cadastro, o Service Desk informará o login e senha para acesso à rede.
+                </div>
+            </div>
         </div>
-        <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-                O cadastro de colaboradores terceiros para acesso a rede CPTM è realizado pelo Service Desk.
-                <br>
-                <br>
-                A solicitação deve ser encaminhada por e-mail para <a href="mailtoservicedesk@cptm.sp.gov.br">servicedesk@cptm.sp.gov.br</a> pelo gestor CPTM responsável colaborador. As seguintes informações são necessárias:
-                <br>
-                <br>    
-                <strong>Empresa: </strong>
-                <br>
-                <strong>Nome Completo: </strong>
-                <br>
-                <strong>Sexo: </strong> ( ) feminino ( ) masculino
-                <br>
-                <strong>Data de Nascimento: </strong>
-                <br>
-                <strong>CPF: </strong>
-                <br>
-                <strong>Estado Cívil: </strong> ( ) Solteiro ( ) Casado ( ) Desquitado ( ) Viúvo ( ) Sep. judicialmente ( ) Outro
-                <br>
-                <strong>Grau de Instituição: </strong>
-                <br>
-                <strong>RG: </strong>
-                <br>
-                <strong>E-mail: </strong>
-                <br>
-                <strong>Telefone: </strong>
-                <br>    
-                <strong>Gestor CPTM Responsável: </strong>
-                <br>
-                <strong>Estrutura Organizacional: </strong>
-                <br>
-                <br>
-                Após o cadastro, o Service Desk informará o login e senha para acesso a rede.
-                <br>
-                <br>
-                <br>
+
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                <i class="fa-solid fa-chevron-down"></i>
+                Renovação
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    A conta de acesso para colaboradores terceiros expira a cada 60 dias. A renovação deve ser realizada pelo gestor CPTM responsável. Quinze dias antes da expiração, o sistema enviará uma notificação por e-mail para que os terceiros sejam validados. Se a validação não ocorrer, o acesso será cancelado e só poderá ser reativado mediante solicitação do gestor ao Service Desk.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                <i class="fa-solid fa-chevron-down"></i>
+                Alteração
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    É responsabilidade do gestor manter as informações do colaborador terceiro atualizadas no cadastro CPTM. Sempre que houver necessidade de atualização, deve ser encaminhado um e-mail ao Service Desk.
+                </div>
             </div>
         </div>
     </div>
-    <div class="accordion-item">
-        <div class="accordion-item-header">
-            <i class="fa-solid fa-chevron-down"></i>
-            Renovação
-        </div>
-        <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-                A conta de acesso para colaboradores terceiros expira a cada 60 dias.
-                    <br>
-                    A renovação dessas contas deve ser realizada pelo gestor CPTM responsável. Quinze dias antes da expiração o sistema enviará por e-mail uma notificação para que os terceiros sejam validados, a notificação ocorrerá diariamente até o dia da expiração; O gestor terá a opção de cancelar ou renovar o acesso por mais um período de 60 dias.
-                    <br>
-                    Se a validação não ocorrer, o acesso será cancelado e só poderá ser reativado mediante solicitação do gestor ao Service Desk.
-                    <br>
-                    Para desativar um login, fora do período de renovação automática, o responsável deverá encaminhar a solicitação via e-mail ao Service Desk, que prosseguirá com a desativação. 
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <div class="accordion-item-header">
-            <i class="fa-solid fa-chevron-down"></i>
-            Alteração
-        </div>
-        <div class="accordion-item-body">
-            <div class="accordion-item-body-content">  
-                É responsabilidade do gestor manter as informações do colaborador terceiro atualizada no cadastro CPTM. Sempre que houver necessidade de atualização, que podem ser alteração de gestor, empresa ou revogação de acesso, deverá ser encaminhado um e-mail ao Service Desk para atualização.
-            </div>
-        </div>
-    </div>
-   </div>
-   <script src="js/accordion.js"></script>
 
+    <script src="js/accordion.js"></script>
 
     <!-- Ajuda -->
-    <section id="ajuda" data-aos="fade-up" fade-aos-delay="100" data-aos-duration="1000">
-        <div class="video">  
+    <section id="ajuda" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="video">
             <h1>Tutorial</h1>
             <p>Neste tutorial em vídeo, apresentamos um guia passo a passo para facilitar o acesso ao Serviço Online. Este recurso foi desenvolvido para ajudá-lo a navegar de forma eficaz e rápida, garantindo que você possa utilizar todas as funcionalidades disponíveis na plataforma.</p>
-    
             <div class="div-video">
-    
-                <video autoplay muted loop class="video" controls>
-                    <source src="assets/ajuda/video.mp4" type="video/mp4">
+                <video autoplay muted loop controls style="max-width: 80%; height: auto;">
+                    <source src="file:///C:/Users/Aluno/Desktop/video.mp4.mp4" type="video/mp4">
                 </video>
-                
             </div>
             <a href="https://servicecenter.prodesp.sp.gov.br/arsys/shared/login.jsp?/arsys/" class="botao">Clique Aqui</a>
         </div>
     </section>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>AOS.init();</script>
     <script src="js/ajuda.js"></script>
 
-    <!-- fim do ajuda -->
-    
-
-    <!-- Início do footer -->
-
-    <footer> 
+    <!-- Footer -->
+    <footer>
         <p class="contatos"><strong>Contatos</strong></p>
         <div class="e-mail">
             <img src="assets/rodapé/envelope.svg" alt="E-mail para contatos" class="icon">
             <span><strong>E-mail:</strong> passageiro@cptm.sp.gov.br</span>
         </div>
-
         <div class="telefone">
             <img src="assets/rodapé/telephone.svg" alt="Telefone para contatos" class="icon">
             <span><strong>Desk:</strong> 0800 055 0121</span>
         </div>
-        
-        <div class="e-mail">
-            <img src="assets/rodapé/clock.svg" alt="E-mail para contatos" class="icon">
-            <span><strong>Horario de atendimento: </strong> De segunda à sexta, das 8h às 17h</span>
+        <div class="horario">
+            <img src="assets/rodapé/clock.svg" alt="Horário de atendimento" class="icon">
+            <span><strong>Horário de atendimento:</strong> De segunda à sexta, das 8h às 17h</span>
         </div>
         <hr class="linha3">
         <p class="copyright">© Copyright <strong>CPTM</strong> | Todos os direitos reservados</p>
-        <p class="design"><strong>Design feito por Flávia, Juan, Leticia, e Ygor.</strong></p>
-    
-    </footer> <!-- Fim do footer -->
-    
+        <p class="design"><strong>Design feito por Flávia, Juan, Leticia e Ygor.</strong></p>
+    </footer>
+
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-        <i class="bi bi-arrow-up-short"> </i>
-    
-       </a>
-  
-    <script src="js/index.js"> </script>
-    
-
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
