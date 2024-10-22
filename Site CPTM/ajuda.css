@@ -4,13 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .container {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 10px 0 50px;
     max-width: 700px;
     width: 100%;
     padding: 20px;
@@ -21,7 +19,7 @@ body {
 
 h1 {
     margin-bottom: 10px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ff0008;
 }
 
@@ -29,14 +27,13 @@ p {
     margin: 0;
     padding-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
-
 
 .div-video {
     margin-top: 10px;
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 56.25%; /* Proporção 16:9 */
     position: relative;
     margin-bottom: 30px;
 }
@@ -50,8 +47,6 @@ p {
     border-radius: 10px;
 }
 
-
-
 .botao {
     padding: 0.5em 1em;
     border: none;
@@ -59,7 +54,7 @@ p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.9rem;
     color: #fff;
-    background-color: #ee3338 ;
+    background-color: #ee3338;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
     animation: pulsar 2s infinite;
@@ -77,7 +72,7 @@ p {
     left: 0;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg,#f23030,#f28080,#f2c2c2,#f2f2f2);
+    background: linear-gradient(45deg, #f23030, #f28080, #f2c2c2, #f2f2f2);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
     z-index: -1;
@@ -94,7 +89,6 @@ p {
         background-position: 0 50%;
     }
 }
-    
 
 @keyframes pulsar {
     0% {
@@ -114,4 +108,3 @@ p {
 .botao:active {
     transform: scale(0.95);
 }
-   
