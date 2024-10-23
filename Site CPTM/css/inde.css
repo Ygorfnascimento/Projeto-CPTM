@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(../assets/fundo2.jpg);
+    background-image: url(../login/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -175,15 +175,17 @@ a {
     height: 40px;
     border-radius: 4px;
     transition: all 0.4s;
+    background-color: #e9dbdb;
 }
 
 .scroll-top.active {
     visibility: visible;
     opacity: 1;
+    color: #c72d2d;
 }
 
 .scroll-top:hover {
-    background: #d6bcbc;
+    background: #000000;
 }
 
 /* Outros estilos */
@@ -350,6 +352,7 @@ video,
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+
 }
 
 .accordion-item-body-content {
